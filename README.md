@@ -66,7 +66,4 @@ predictions = model.predict(X_new)
 
 ## Licence
 
-This project is licensed under Apache 2.0
-
-model = load_model("LENA_pretrained.h5")
-predictions = model.predict(X_new)
+This project is licensed under Apache 2.0.
