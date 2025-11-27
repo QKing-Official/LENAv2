@@ -55,11 +55,47 @@ After training, the model evaluates:
 
 Pretrained models are available in the releases as `.h5` and `.keras` files. You can load them directly for inference:
 
-```python
-from tensorflow.keras.models import load_model
+Load from a .h5:
 
-model = load_model("LENAv2_model.h5")
-predictions = model.predict(X_new)
+```python
+import tensorflow as tf
+import numpy as np
+
+# Path to your .h5 model
+h5_path = "path/to/LENAv2_model.h5"
+
+# Load the model
+model_h5 = tf.keras.models.load_model(h5_path)
+
+# Example input data (must match input shape of model)
+# Replace 10 with your num_features
+x_input = np.random.rand(5, 10)  # 5 samples, 10 features
+
+# Run predictions
+y_pred = model_h5.predict(x_input)
+print("Predictions from .h5 model:")
+print(y_pred)
+```
+
+Load from a .keras:
+
+```python
+import tensorflow as tf
+import numpy as np
+
+# Path to your .keras folder
+keras_path = "path/to/LENAv2_model.keras"
+
+# Load the model
+model_keras = tf.keras.models.load_model(keras_path)
+
+# Example input data (must match input shape of model)
+x_input = np.random.rand(5, 10)  # 5 samples, 10 features
+
+# Run predictions
+y_pred = model_keras.predict(x_input)
+print("Predictions from .keras model:")
+print(y_pred)
 ```
 
 ## Licence
