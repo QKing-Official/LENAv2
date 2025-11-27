@@ -19,8 +19,6 @@ LENA is a neural network framework for regression tasks that can handle complex 
    
 3. Install dependencies:
 
-   pip install -r requirements.txt
-
    Required libraries:
    - numpy
    - pandas
