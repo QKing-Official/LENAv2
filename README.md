@@ -58,7 +58,7 @@ Pretrained models are available in the releases as `.h5` and `.keras` files. You
 ```python
 from tensorflow.keras.models import load_model
 
-model = load_model("LENA_pretrained.h5")
+model = load_model("LENAv2_model.h5")
 predictions = model.predict(X_new)
 ```
 
