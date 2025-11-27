@@ -11,7 +11,7 @@ import os
 
 np.random.seed(42)
 
-USER_DATASET = None   # <<<<<<<<<<< CHANGE THIS TO YOUR CSV PATH
+USER_DATASET = None   # <<<<<<<<<< CHANGE THIS TO YOUR CSV PATH
 
 def load_or_generate_dataset(user_csv=None, num_samples=200000, num_features=10):
 
