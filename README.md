@@ -15,9 +15,9 @@ LENA is a neural network framework for regression tasks that can handle complex 
 
 1. Clone the repository:
 
-   git clone <repository_url>
-
-2. Install dependencies:
+   git clone https://github.com/QKing-Official/LENAv2
+   
+3. Install dependencies:
 
    pip install -r requirements.txt
 
